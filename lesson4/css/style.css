@@ -1,0 +1,47 @@
+* {
+    background-color: #F7F9FA;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 355px;
+    height: 238px;
+}
+
+.horizontal, .header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.horizontal * {
+    background-color: white;
+}
+
+.ticket {
+    width: 122px;
+    height: 22px;
+    text-align: center;
+    background: #E6F7FF;
+    color: #2C90C9;
+}
+
+.header {
+    margin-top: 80px;
+    margin-right: 400px;
+}
+
+.content {
+    margin: 20px;
+    width: 355px;
+    height: 487px;
+}
+
+.content > div {
+    padding: 15px;
+}
