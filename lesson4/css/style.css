@@ -1,5 +1,8 @@
-* {
-    background-color: #F7F9FA;
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
     box-sizing: border-box;
 }
 
@@ -7,41 +10,77 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: #F7F9FA;
+}
+
 img {
     width: 355px;
-    height: 238px;
 }
 
-.horizontal, .header {
+.general {
+    width: 1230px;
+    margin: 10%;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
-    margin-left: 350px;
-    margin-right: 350px;
+    width: 1130px;
 }
 
-.horizontal * {
-    background-color: white;
+.header-title {
+    font: 42px/50.4px Fraunces;
+    width: 533px;
+}
+
+.header-ref {
+    display: block;
+    width: 110px;
+    font: 17px/27px sans-serif ;
 }
 
 .ticket {
     width: 122px;
-    height: 22px;
     text-align: center;
     background: #E6F7FF;
     color: #2C90C9;
-}
-
-.header {
-    margin-top: 80px;
-    margin-right: 400px;
+    margin: 25.02px 24px 0;
+    font: 12px/16px sans-serif ;
 }
 
 .content {
-    margin: 20px;
-    width: 355px;
-    height: 487px;
+    display: flex;
+    justify-content: space-between;
+    width: 1130px;
 }
 
-.content > div {
-    padding: 15px;
+.content-card {
+    width: 355px;
+    background-color: white;
+    margin-left: 33px;
+    margin-top: 32px;
+}
+
+.content-card.first {
+    margin-left: 0;
+}
+
+.content-card__title {
+    width: 288px;
+    margin: 8px 24px;
+    font: 25px/31.25px Fraunces;
+}
+
+.content-card__p {
+    width: 307px;
+    margin: 11px 24px;
+    font: 14px/19.6px sans-serif ;
+}
+
+.content-card__date {
+    display: block;
+    width: 90px;
+    margin: 16px 24px 0;
+    font: 12px/19.6px sans-serif ;
 }
