@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -34,9 +33,10 @@ h1 {
 
 img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 80px;
   height: 80px;
-  margin: auto;
 }
 
 .mrt-text {
@@ -52,17 +52,19 @@ img {
   width: 773px;
   font: 500 26px/31.2px "Montserrat", sans-serif;
   text-align: center;
-  margin-top: 20px;
-  margin-left: 192px;
+  margin: 20px 192px 0;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
-  font: 500 20px "Montserrat", sans-serif;
+  font: 500 20px/28px "Montserrat", sans-serif;
 }
 
 .body-part {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   margin-top: 65px;
   width: 390px;
   height: 473px;
@@ -79,8 +81,7 @@ img {
 .body-part__text {
   width: 350px;
   text-align: center;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin: 10px 20px 0;
 }
 
 .cervical__title {
