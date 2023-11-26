@@ -1,0 +1,34 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.preloader:before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 5px solid #3F51B5;
+  border-left-color: #009688;
+  border-top-color: #FF9800;
+  border-bottom-color: #FF5722;
+  position: absolute;
+  border-radius: 100%;
+  animation: preloader-animate 1s linear infinite;
+}
+
+@keyframes preloader-animate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
