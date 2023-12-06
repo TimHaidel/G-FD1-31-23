@@ -15,7 +15,7 @@ let isOnRetirement = function (age, isMale) {
 }
 
 let genderToString = function (isMale) {
-    return isMale === true ? "Мужской" : "Женский";
+    return isMale ? "Мужской" : "Женский";
 }
 
 let result = `Ваше имя: ${lastName}\nВаша фамилия: ${firstName}\nВаш пол: ${genderToString(isMale)}\nВы на пенсии: ${isOnRetirement(age, isMale)}`;
